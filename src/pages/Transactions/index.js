@@ -1,12 +1,14 @@
-import React,{useEffect, useState} from "react"
+import React,{useEffect, useState,useContext} from "react"
 import {View,Text,TouchableOpacity} from "react-native"
 import SelectMonth from "../../components/SelectMonth"
 import styles from "./styles"
 import Icon from 'react-native-vector-icons/SimpleLineIcons'
 import ShowTransactions from "../../components/ShowTransactions"
 import AsyncStorage from "@react-native-async-storage/async-storage"
+import {MonthSelectedContext} from "../../context/MonthSelected"
 
 const Transactions = ({navigation,route}) => {
+    const {month} = useContext(MonthSelectedContext)
     const [filter,setFilter] = useState({
         type:"Todos",
         tag:"Todos"
@@ -46,7 +48,7 @@ const Transactions = ({navigation,route}) => {
 
         getTransactions()
 
-    },[filter])
+    },[filter,month])
 
     return(
         <>
