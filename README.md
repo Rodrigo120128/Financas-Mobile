@@ -3,8 +3,8 @@
 </h1>
 
 <div align="center">
-    <img src="./src/assets/gifs/gif1.gif" width="200"/>
-    <img src="./src/assets/gifs/gif2.gif" width="200"/>
+    <img src="./src/assets/gifs/gif1.gif" width="270"/>
+    <img src="./src/assets/gifs/gif2.gif" width="270"/>
 </div>
 
 <hr/>
