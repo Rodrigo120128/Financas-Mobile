@@ -1,0 +1,61 @@
+import {StyleSheet} from "react-native"
+
+const styles = StyleSheet.create({
+    header:{
+        backgroundColor:"#2ecc71",
+        alignItems:"center",
+        paddingTop:10,
+        height:145
+    },
+    containerHeader:{
+        width:240,
+        flexDirection:"row",
+        justifyContent:"space-between"
+    },
+    text:{
+        color:"white",
+        paddingBottom:5
+    },
+    point:{
+        width:7,
+        height:7,
+        borderRadius:7,
+        backgroundColor:"white"
+    },
+    containerInput:{
+        flex:1,
+        width:405,
+        justifyContent:"center",
+        alignItems:"center"
+    },
+    input:{
+        fontSize:40,
+        color:"white"
+    },
+    containerForm:{
+        flex:1,
+        padding:30
+    },
+    textType:{
+        fontSize:18,
+        color:"rgba(0,0,0,0.6)"
+    },
+    Tag:{
+        flexDirection:"row",
+        alignItems:"center",
+        paddingBottom:20,
+        paddingTop:20
+    },
+    hr:{
+        borderTopColor:"rgba(0,0,0,0.6)",
+        borderBottomWidth:1,
+        marginBottom:15
+    },
+    containerBtn:{
+        height:80,
+        justifyContent:"flex-end",
+        alignItems:"center"
+    }
+})
+
+export default styles
